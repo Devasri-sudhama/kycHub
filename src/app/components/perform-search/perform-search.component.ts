@@ -1,4 +1,3 @@
-import { map } from 'rxjs';
 import { Component, Input, OnInit, Output } from '@angular/core';
 import { Individual } from 'src/app/Models/individual.model';
 import { FormGroup, FormBuilder, FormArray, FormControl, Validators } from '@angular/forms';
@@ -13,9 +12,7 @@ import { OnBoarding } from 'src/app/Models/onBoarding.model';
 export class PerformSearchComponent implements OnInit {
   public showIndividualForm = true;
   public showOnboardingListForm = false;
-  // @Output() public individualSearchResults = false = new EventEmitter<number>();;
   individualSearchResults: boolean = false;
-
   public legalEntitySearchResults = false;
   public showEntitySearch: boolean = false;
   public showOnboardingList: boolean = false;
@@ -23,16 +20,14 @@ export class PerformSearchComponent implements OnInit {
   lastName: String = "";
   Country: String = "";
   dateOfBirth: String = "";
-
   companyName: String = "";
   companyId: String = "";
-  // Country: String = "";
+
   jurisdiction: String = "";
-  // searchType: string="";
+
   showSearchResults = false;
   errorName: boolean = false;
   searchType: string = 'individual';
-  // myForm: FormGroup;
   myForm: FormGroup;
 
   @Input() searchResults: any;
@@ -40,16 +35,12 @@ export class PerformSearchComponent implements OnInit {
   results = "";
   @Input() resultsData: boolean = false;
   @Input() noresults: boolean = false;
-  @Input() individual:boolean = false;
-  @Input() onboarding:boolean = false;
+  @Input() individual: boolean = false;
+  @Input() onboarding: boolean = false;
   constructor(private aml: AmlService, private http: HttpClient, private fb: FormBuilder) { }
-
-
-
-
   getIndividualData(individual: Individual) {
     this.individual = true;
-    this.onboarding =false;
+    this.onboarding = false;
     let size = 10;
     let page = 0;
     let searchType = "FUZZY"
@@ -57,7 +48,7 @@ export class PerformSearchComponent implements OnInit {
     let fullname = individual.firstName + " " + individual.lastName
     let name = fullname.split(' ');
     let countries = individual.Country;
-    let country:[] = []
+    let country: [] = []
     let source: [] = []
     let guid = ""
     let category: [] = []
@@ -91,7 +82,6 @@ export class PerformSearchComponent implements OnInit {
         const source = result['details'][0]['datasource']['dataAgencyName']
         const country = result['details'][0]['nationality']
         const risk = result['details']['riskLevel']
-        // console.log(category +" "+ )
         return { category, name, source, country, risk }
 
 
@@ -102,9 +92,9 @@ export class PerformSearchComponent implements OnInit {
         this.noresults = true;
         this.resultsData = false
         this.showSearchResults = true;
-        
+
       } else {
-    
+
         this.individualSearchResults = true;
         this.noresults = false;
         this.resultsData = true;
@@ -117,12 +107,12 @@ export class PerformSearchComponent implements OnInit {
   }
   getOnBoardingData(OnBoarding: OnBoarding) {
     this.individual = false;
-    this.onboarding =true;
+    this.onboarding = true;
     let size = 10;
     let page = 0;
     let searchType = "FUZZY"
     let name = OnBoarding.companyName.split(' ');
-    let country:[] = []
+    let country: [] = []
     Array.from(OnBoarding.country);
     // country.push()
     let source: [] = []
@@ -158,27 +148,17 @@ export class PerformSearchComponent implements OnInit {
         const companyName = result['details'][0]['rawData']['fullName']
         const companyId = result['details'][0]['additionalInfo']
         const type = result['details'][0]['entityType']
-        const country =  result['details'][0]['rawData']['country']
-        const risk =  result['details'][0]['rawData']['riskLevel']
-        console.log(category +" "+companyName + " "+companyId+" "+country+" "+risk )
-        return { category, companyName,type, companyId, country, risk }
-
-
+        const country = result['details'][0]['rawData']['country']
+        const risk = result['details'][0]['rawData']['riskLevel']
+        console.log(category + " " + companyName + " " + companyId + " " + country + " " + risk)
+        return { category, companyName, type, companyId, country, risk }
       })
-
       var dataSize = Object.keys(this.tableData).length;
       if (dataSize == 0) {
-        
         this.noresults = true;
         this.resultsData = false;
-       
         this.showSearchResults = true;
-        
-
-        
       } else {
-        
-        
         this.individualSearchResults = true;
         this.noresults = false;
         this.resultsData = true;
@@ -186,10 +166,7 @@ export class PerformSearchComponent implements OnInit {
       }
       console.log(this.tableData)
     })
-
-
   }
-
   submitted = false;
   ngOnInit() {
 
@@ -200,12 +177,12 @@ export class PerformSearchComponent implements OnInit {
       this.showOnboardingListForm = true;
       this.individualSearchResults = false;
       this.showSearchResults = false;
-      
+
     } else {
       this.showIndividualForm = true;
       this.noresults = false;
       this.showSearchResults = false;
-      this.onboarding=false;
+      this.onboarding = false;
       this.showOnboardingListForm = false;
     }
   }

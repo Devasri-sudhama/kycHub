@@ -1,5 +1,4 @@
-import { OnBoarding } from 'src/app/Models/onBoarding.model';
-import { Individual } from 'src/app/Models/individual.model';
+
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({

@@ -1,9 +1,13 @@
+import { Individual } from 'src/app/Models/individual.model';
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiUrl: "https://api.dev.kychub.com/v2/aml/search/",
+  individual: "33bfc416-73a2-40f2-90df-0b66455b47d4",
+  onboarding: "33bfc416-73a2-40f2-90df-0b66455b47d4"
 };
 
 /*
