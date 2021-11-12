@@ -1,0 +1,33 @@
+
+.knowmore{
+    position: absolute;
+    width: 320px;
+    height: 513px;
+    left: 1520px;
+    top: 188px;
+    
+    background: #FFFFFF;
+  }
+  
+  .knowmore-content{
+    /* position: absolute; */
+width: 261px;
+height: 336px;
+left: 1549px;
+top: 217px;
+padding-left: 29px;
+padding-right: 30px;
+padding-top: 29px;
+padding-bottom: 148px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+
+color: #000000;
+  }
+
+  .danger{
+      color: red;
+  }

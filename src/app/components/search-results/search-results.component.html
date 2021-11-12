@@ -1,0 +1,117 @@
+<div *ngIf="showSearchResults">
+  <div class="divider-2"></div>
+  <div class="search-results">
+    Search Results
+    
+
+    <div>
+      <!-- <div></div> -->
+
+      <!-- <div *ngFor="let result of searchResults; let i = index"> -->
+      <!-- <h1>  <tr>{{result['+'i'+'].value.content[i]["dataSourceSlug"]}} -->
+      <!-- this.searchResults.data.content['0'].details['1'] -->
+      <!-- {{searchResults.content[0].details[i]['guid'] }} -->
+      <!-- </h1> -->
+      <!-- </div> -->
+      <!-- {{tableData}} -->
+
+      <div *ngIf="individual">
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Country</th>
+            <th>Source</th>
+            <th>Risk Status</th>
+          </tr>
+        </table>
+
+        <table>
+          <tr *ngFor="let result of tableData">
+            <td>{{ result.name }}</td>
+            <td>{{ result.category }}</td>
+            <td>{{ result.country }}</td>
+            <td>{{ result.source }}</td>
+            <td>{{ result.risk }}</td>
+          </tr>
+        </table>
+        <div class="row">
+          <div class="create-profile-div column">
+            <div class="create-profile-content">
+              <p>
+                Did not find what you were looking for? Begin Onboarding process
+                by creating new Profile.
+              </p>
+              <button class="create-profile-btn create-profile-btn-style">
+                Create Profile
+              </button>
+            </div>
+          </div>
+          <div class="column search-adverse-media-div">
+            <div class="search-adverse-media-content">
+              <p>
+                Did not find what you were looking for?
+
+                <b>Search for Adverse Media </b>
+                for individuals with no AML data
+              </p>
+              <button
+                class="search-adverse-media-btn search-adverse-media-btn-style"
+              >
+                Search Adverse Media
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="onboarding">
+        <table >
+          <tr>
+            <td>Company Name</td>
+            <td>Company Id</td>
+            <td>Country</td>
+            <td>Type</td>
+            <td>Risk Status</td>
+          </tr>
+        </table>
+        <table>
+          <tr *ngFor="let result of tableData">
+            <td>{{ result.companyName }}</td>
+            <td>{{ result.companyId }}</td>
+            <td>{{ result.country }}</td>
+            <td>{{ result.type }}</td>
+            <td>{{ result.risk }}</td>
+          </tr>
+        </table>
+        <div>
+          <div class="noresults" *ngIf="!noresults && onboarding">
+            <div>
+              <p>
+                Did not find what you were looking for? Begin Onboarding process
+                by creating new Profile.
+              </p>
+              <button class="create-profile-btn create-profile-btn-style">
+                Create Profile
+              </button>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="noresults">
+          <div class="">
+            <div class="noResults">
+              <p>
+                No results found for the Legal Entity</p>
+                <p> Begin Onboarding process
+                by creating Profile or contact Support.
+              </p>
+              <button class="create-profile-btn create-profile-btn-style">
+                Create Profile
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

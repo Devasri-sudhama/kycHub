@@ -1,0 +1,62 @@
+
+.create-profile-div{
+    position: absolute;
+    width: 650px;
+    height: 180px;
+    left: 332px;
+    top:100%;
+    background: #FFFFFF;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .create-profile-content{  
+    /* position: absolute; */
+  width: 483px;
+  height: 49px;
+  left: 416px;
+  top: 1024px;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  /* color: #000000; */
+  padding-left: 84px;
+
+  padding-right: 83px;
+  padding-top: 29px;
+  padding-bottom: 102px;
+  }
+  .create-profile-btn{
+    /* position: absolute; */
+   
+    width: 242.06px;
+    height: 45px;
+    left: 536.94px;
+    top: 1104px;
+    background: #E54C0A;
+  }
+  
+  
+  .create-profile-btn-style{
+    /* position: absolute;   */
+    width: 241.82px;
+    height: 45px;
+    left: 537.03px;
+    top: 1104px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    
+    color: #FFFFFF;
+    
+  }
+  

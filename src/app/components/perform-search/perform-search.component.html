@@ -1,0 +1,157 @@
+<div class="profile">
+  <a href="#"
+    ><img src="../assets/images/profile.png" class="vector-profile" />
+    <img src="../assets/images/notifications.png" class="vector-notifications"
+  /></a>
+</div>
+<div class="customer-onboarding">CUSTOMER ONBOARDING</div>
+<div>
+  <a href="#" class="entity-search-block entity-search"> Entity Search</a>
+  <a href="#" class="Onboarding-List-block Onboarding-List"> Onboarding List</a>
+  <div class="perform-search">Perform Search</div>
+  <div class="divider"></div>
+  <div class="">
+  <div class="search">
+    
+    <label for="individual" class="individual">
+       <input
+        #individualSearch
+        type="radio"
+        id="individual"
+        [(ngModel)]="searchType"
+        value="individual"
+        name="searchType"
+        (ngModelChange)="change()"
+      />Individual
+    </label>
+    <label for ="legalEntity" class="legal-entity" >
+      <input
+      id="legalEntity"
+        type="radio"
+        [(ngModel)]="searchType"
+        value="legalEntity"
+        (ngModelChange)="change()"
+        name="searchType"
+        #legalEntitySearch
+        
+      />Legal Entity
+      </label>
+   
+  </div>
+
+  <div *ngIf="showIndividualForm">
+    <form
+    
+      #individualFormData="ngForm"
+      (ngSubmit)="getIndividualData(individualFormData.value)"
+    >
+      <div class="firstname">First Name*</div>
+      <input
+        type="text"
+        class="firstname-input"
+        placeholder="Type in your first name"
+        [(ngModel)]="firstName"
+        name="firstName"
+        id="firstName"
+        autocomplete="off"
+      />
+
+      <div class="lastname">Last Name</div>
+      <input
+        type="text"
+        class="lastname-input"
+        placeholder="Type in your last name"
+        [(ngModel)]="lastName"
+        name="lastName"
+        id="lasttname"
+        autocomplete="off"
+      />
+
+      <div class="country">Country*</div>
+      <input
+        type="text"
+        class="country-select"
+        placeholder="Select a Country"
+        name="Country"
+        [(ngModel)]="Country"
+        id="country"
+      />
+
+      <div class="dateofbirth">Date of Birth</div>
+      <input
+        type="date"
+        class="dateofbirth-input"
+        placeholder="Select a Date"
+        name="dateofBirth"
+        [(ngModel)]="dateOfBirth"
+        onfocus="(this.type='date')" onblur="(this.type='text')"
+        id="dateOfBirth"
+      /><img src="../assets/images/calender.png" class="vector-calender" />
+      <button class="search-btn-block search-btn" type="submit" *ngIf='firstName'>Search</button>
+    </form>
+</div>
+    <!-- <button >Search</button> -->
+
+    <div *ngIf="showOnboardingListForm">
+      <form
+      #onBoardingFormData="ngForm"
+      
+      (ngSubmit)="getOnBoardingData(onBoardingFormData.value)"
+    >
+      <div class="firstname">Company Name</div>
+      <input
+        type="text"
+        class="firstname-input"
+        placeholder="Type in Company name"
+        [(ngModel)]="companyName"
+        name="companyName"
+        id="companyName"
+        autocomplete="off"
+      />
+
+      <div class="lastname">Company ID</div>
+      <input
+        type="text"
+        class="lastname-input"
+        placeholder="Type in Company ID"
+        [(ngModel)]="companyId"
+        name="companyId"
+        id="companyId"
+        autocomplete="off"
+      />
+
+      <div class="country">Country</div>
+      <input
+        type="text"
+        class="country-select"
+        placeholder="Select a Country"
+        name="country"
+        id="country"
+        [(ngModel)]="Country"
+        autocomplete="off"
+      />
+
+      <div class="Jurisdiction">Jurisdiction</div>
+      <input
+        type="text"
+        class="Jurisdiction-input"
+        placeholder="Select a Jurisdiction/state"
+        name="jurisdiction"
+        id="jurisdiction"
+        [(ngModel)]="jurisdiction"
+        autocomplete="off"
+      />
+      <button class="search-btn-block search-btn" *ngIf='companyName' type="submit">Search</button>
+      </form>
+    </div>
+    </div>
+  </div>
+
+<app-search-results
+  [showSearchResults]="showSearchResults"
+  [tableData]="tableData"
+  [resultsData]="resultsData"
+  [noresults]="noresults"
+  [individual]="individual"
+  [onboarding]="onboarding"
+></app-search-results>

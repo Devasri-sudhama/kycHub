@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background: #e5e5e5;
+    height:100%;
+    
+  }
+  li {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    cursor:pointer;
+  }
+  a:active{
+    background: #0094FF;
+    display: block;
+  }
+  button{
+    border: none;
+    cursor:pointer;
+  }

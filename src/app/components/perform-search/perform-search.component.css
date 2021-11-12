@@ -1,0 +1,388 @@
+.entity-search-block {
+  position: absolute;
+  width: 226px;
+  height: 45px;
+  left: 320px;
+  top: 97px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+.entity-search {
+  /* position: absolute; */
+  width: 226px;
+  height: 45px;
+  left: 320px;
+  top: 97px;
+
+  background: #FFFFFF;
+}
+
+.Onboarding-List-block {
+  position: absolute;
+  width: 226px;
+  height: 45px;
+  left: 555px;
+  top: 97px;
+
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.Onboarding-List {
+  position: absolute;
+  width: 226px;
+  height: 45px;
+  left: 555px;
+  top: 97px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+.search-div {
+  padding: 25%;
+}
+
+.perform-search {
+  position: absolute;
+  width: 415px;
+  height: 42px;
+  left: 338px;
+  top: 171px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+
+  color: #000000;
+}
+
+.divider {
+  position: absolute;
+  width: 920px;
+  height: 0px;
+  left: 520px;
+  top: 188px;
+  border: none;
+
+  border: 1px solid #000000;
+}
+table{ border-collapse: separate; }
+table td { border-spacing: 1em; }
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: #ffffff;
+  opacity: 0;
+  display: block;
+  /* background: url(https://mywildalberta.ca/images/GFX-MWA-Parks-Reservations.png) no-repeat; */
+
+}
+.customer-onboarding {
+  position: absolute;
+  width: 612px;
+  height: 42px;
+  left: 324px;
+  top: 56px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #000000;
+}
+
+
+.search-btn-block {
+  position: absolute;
+  width: 145.94px;
+  height: 45px;
+  left: 816px;
+  top: 555px;
+
+  background: #0094FF;
+}
+
+.search-btn {
+  position: absolute;
+  width: 145.79px;
+  height: 45px;
+  left: 816.06px;
+  top: 555px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
+
+}
+input::-webkit-datetime-edit{ color: transparent; }
+input:focus::-webkit-datetime-edit{ color: #000; }
+.search {
+  position: absolute;
+  width: 1108px;
+  height: 415px;
+  left: 332px;
+  top: 225px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.individual {
+  padding-left: 44px;
+
+  display: inline-block;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+
+  /* color: #000000; */
+
+}
+
+input[type=radio] {
+  transform: scale(1.5);
+}
+
+/*input fields*/
+.legal-entity {
+
+  /* position: absolute; */
+  padding-left: 451px;
+  padding-top: 42px;
+  margin-top: 2px;
+  display: inline-block;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.firstname {
+  position: absolute;
+  width: 147.17px;
+  height: 30px;
+  left: 379.8px;
+  top: 320px;
+
+
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #000000;
+}
+
+.firstname-input {
+  position: absolute;
+  width: 446.4px;
+  height: 30px;
+  left: 379.8px;
+  top: 350px;
+
+  background: #F7F7F7;
+  /* background: #f7f7f7; */
+}
+
+input {
+  border: none;
+  border-color: transparent;
+}
+
+input::placeholder {
+  /* position: absolute; */
+  width: 203px;
+  height: 30px;
+  left: 390px;
+  top: 350px;
+  opacity: 0.5;
+  /* background: #F7F7F7; */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  /* display: flex; */
+  align-items: center;
+
+  color: #000000;
+
+  opacity: 0.4;
+}
+
+.country {
+  position: absolute;
+  width: 147.17px;
+  height: 30px;
+  left: 379.8px;
+  top: 400px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #000000;
+}
+
+.country-select {
+  position: absolute;
+  width: 446.4px;
+  height: 30px;
+  left: 379.8px;
+  top: 430px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #000000;
+  background: #f7f7f7;
+}
+
+.lastname {
+  position: absolute;
+  width: 147.17px;
+  height: 30px;
+  left: 935.01px;
+  top: 320px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #000000;
+}
+
+.lastname-input {
+  position: absolute;
+  width: 446.4px;
+  height: 30px;
+  left: 935.01px;
+  top: 350px;
+
+  background: #f7f7f7;
+}
+
+.dateofbirth {
+  position: absolute;
+  width: 147.17px;
+  height: 30px;
+  left: 935px;
+  top: 400px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #000000;
+}
+
+.dateofbirth-input {
+  position: absolute;
+  width: 393.39px;
+  height: 30px;
+  left: 935px;
+  top: 430px;
+
+  background: #f7f7f7;
+}
+
+.vector-calender {
+  position: absolute;
+  width: 25px;
+  height: 30px;
+  left: 1353.2px;
+  top: 430px;
+
+  /* background: #b2b2b2; */
+}
+
+.Jurisdiction {
+  position: absolute;
+  width: 147.17px;
+  height: 30px;
+  left: 935px;
+  top: 400px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #000000;
+}
+
+.Jurisdiction-input {
+  position: absolute;
+  width: 446px;
+  height: 30px;
+  left: 935px;
+  top: 430px;
+
+  background: #f7f7f7;
+}
+
+.vector-profile {
+  position: absolute;
+  width: 21.94px;
+  height: 21.94px;
+  left: 95%;
+  top: 59px;
+
+  /* background: #000000; */
+}
+
+.vector-notifications {
+  position: absolute;
+  width: 18px;
+  height: 21.94px;
+  left: 92%;
+  top: 59px;
+
+  /* background: #000000; */
+}

@@ -1,0 +1,240 @@
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+nav {
+  position: absolute;
+  width: 240px;
+  height: 916px;
+  left: 0px;
+  top: 0px;
+
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+}
+
+#home {
+  position: absolute;
+  width: 90px;
+  height: 34px;
+  left: 80px;
+  top: 171px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #000000;
+}
+
+#AML-Check {
+  position: absolute;
+  width: 121px;
+  height: 34px;
+  left: 80px;
+  top: 237px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #000000;
+}
+
+#Onboarding {
+  position: absolute;
+  width: 152px;
+  height: 45px;
+  left: 79px;
+  top: 289px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+#Risk-Policy {
+  position: absolute;
+  width: 110px;
+  height: 34px;
+  left: 80px;
+  top: 368px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #000000;
+}
+
+#Reports {
+  position: absolute;
+  width: 90px;
+  height: 34px;
+  left: 80px;
+  top: 434px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #000000;
+}
+#Settings {
+  position: absolute;
+  width: 90px;
+  height: 34px;
+  left: 80px;
+  top: 500px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #000000;
+}
+
+#Billing {
+  position: absolute;
+  width: 90px;
+  height: 34px;
+  left: 65px;
+  top: 566px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #000000;
+}
+
+#FAQs {
+  position: absolute;
+  width: 68px;
+  height: 34px;
+  left: 80px;
+  top: 847px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #000000;
+}
+
+/* vectors*/
+
+.vector-logo {
+  position: absolute;
+  width: 114px;
+  height: 86px;
+  left: 53px;
+  top: 23px;
+  background: url("../../../assets/images/logo.png");
+  /* background: url("../assets/images/logo.png"); */
+
+  /* background: #000000; */
+}
+.vector-home {
+  position: absolute;
+  width: 21px;
+  height: 22px;
+  left: 37px;
+  top: 171px;
+
+  /* background: #000000; */
+}
+
+.vector-AML {
+  position: absolute;
+  width: 24px;
+  height: 19px;
+  left: 37px;
+  top: 236px;
+
+  /* background: #000000; */
+}
+
+.vector-onboarding {
+  position: absolute;
+  width: 21px;
+  height: 27px;
+  left: 37px;
+  top: 296px;
+  background: #000000;
+  /* border: 2px solid #000000; */
+}
+
+.vector-risk {
+  position: absolute;
+  width: 21px;
+  height: 26px;
+  left: 37px;
+  top: 368px;
+
+  /* background: #000000; */
+}
+
+.vector-reports {
+  position: absolute;
+  width: 21px;
+  height: 26px;
+  left: 37px;
+  top: 434px;
+
+  /* background: #000000; */
+}
+
+.vector-settings {
+  position: absolute;
+  width: 21px;
+  height: 26px;
+  left: 37px;
+  top: 500px;
+
+  /* background: #000000; */
+}
+
+.vector-billing {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 37px;
+  top: 566px;
+
+  /* background: #000000; */
+}
+
+.vector-faqs {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 37px;
+  top: 847px;
+
+  /* background: #000000; */
+}
